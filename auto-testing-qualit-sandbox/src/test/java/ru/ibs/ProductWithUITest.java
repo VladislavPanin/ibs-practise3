@@ -10,17 +10,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.ibs.services.UIBugMessCreatorService;
 
 import java.time.Duration;
 import java.util.stream.Stream;
 
 
-public class AddProductTest {
+/**
+ * Практическое задание №3_Тестирование Java
+ */
+public class ProductWithUITest {
 
     private static WebDriver driver;
     private int idPreviousProduct;
     private int idCurrentWebElem;
-    private final BugMessCreatorService bugMessCreatorService = new BugMessCreatorService();
+    private final UIBugMessCreatorService bugMessCreatorService = new UIBugMessCreatorService();
 
     private static Stream<Arguments> productsParameters() {
         return Stream.of(

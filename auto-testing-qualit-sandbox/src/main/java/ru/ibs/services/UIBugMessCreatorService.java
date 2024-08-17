@@ -1,9 +1,12 @@
-package ru.ibs;
+package ru.ibs.services;
 
 
 import org.openqa.selenium.TimeoutException;
 
-public class BugMessCreatorService {
+/**
+ * Практическое задание №3_Тестирование Java
+ */
+public class UIBugMessCreatorService {
 
     public void createBugMessForId(int idCurrentWebElem, int idPreviousProduct, StringBuilder testRes) {
         testRes.append("\n**************************************************************\n")
